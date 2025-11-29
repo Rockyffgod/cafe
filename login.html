@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café Admin Portal</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background: rgba(255,255,255,0.9);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+      width: 350px;
+      text-align: center;
+    }
+    h1 {
+      color: #5c3d2e;
+      margin-bottom: 20px;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #5c3d2e;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover {
+      background: #7a4f3b;
+    }
+    .toggle {
+      margin-top: 15px;
+      color: #5c3d2e;
+      cursor: pointer;
+      font-size: 0.9em;
+    }
+    .error {
+      color: red;
+      font-size: 0.9em;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="logo.jpg "class="logo" alt="Café Logo" width="100">
+
+    <!-- Signup Form -->
+    <form id="signupForm">
+      <h2>Sign up</h2>
+      <input type="text" id="newUser" placeholder="Username" required>
+      <input type="password" id="newPass" placeholder="Password" required>
+      <button type="submit">Sign up</button>
+      <p class="toggle" onclick="showLogin()">Already have an account? Login</p>
+    </form>
+
+    <!-- Login Form -->
+    <form id="loginForm" class="hidden">
+      <h2>Login</h2>
+      <input type="text" id="username" placeholder="Username" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+      <p id="errorMsg" class="error"></p>
+      <p class="toggle" onclick="showSignup()">New here? Signup</p>
+    </form>
+  </div>
+
+<script src="login.js"></script>
+</body>
+</html>

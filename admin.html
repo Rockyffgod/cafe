@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0f0f0f;
+            color: #e6e6e6;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+
+        }
+
+        
+
+        .sidebar h2 {
+            text-align: center;
+            margin: 20px;
+            font-size: 22px;
+        }
+        .hhh{
+            margin-left: 550px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #cfcfcf;
+            text-decoration: none;
+            padding: 12px 5px;
+            margin: 6px 0;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            background: #3a3a4f;
+            color: #fff;
+        }
+
+        .content {
+            margin-left: 0;
+            padding: 20px;
+        }
+
+        .topbar {
+            background: #1a1a1a;
+            padding: 15px 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(255,255,255,0.05);
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 12px rgba(255,255,255,0.06);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .btn-refresh {
+            background: #444;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn-refresh:hover {
+            background: #666;
+        }
+    .go-index {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #007bff;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 0 10px rgba(0,0,0,0.4);
+            transition: 0.3s;
+        }
+
+        .go-index:hover {
+            background: #005fcc;
+        }
+
+    </style>
+</head>
+<body>
+    
+
+    <div class="content">
+        <div class="topbar">
+            <h2 class="hhh">Dashboard Overview</h2>
+            <button class="btn-refresh" onclick="refreshStats()">Refresh</button>
+        </div><br>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Total Users</h3>
+                <p id="usersCount">120</p>
+            </div>
+
+            <div class="card">
+                <h3>Total Posts</h3>
+                <p id="postsCount">350</p>
+            </div><br><br><br><br><br><br><br>
+
+            <div class="card">
+                <h3>Active Sessions</h3>
+                <p id="activeSessions">48</p>
+            </div>
+
+            <div class="card">
+                <h3>System Status</h3>
+                <p id="systemStatus">Running</p>
+            </div>
+        </div>
+
+        
+
+        
+    </div>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const usersCount = document.getElementById("usersCount");
+        const postsCount = document.getElementById("postsCount");
+        const activeSessions = document.getElementById("activeSessions");
+        const systemStatus = document.getElementById("systemStatus");
+        const activityLog = document.getElementById("activityLog");
+
+        
+
+        window.refreshStats = function () {
+            if (!usersCount || !postsCount || !activeSessions || !systemStatus) return;
+
+            usersCount.innerText = 120 + Math.floor(Math.random() * 10);
+            postsCount.innerText = 350 + Math.floor(Math.random() * 20);
+            activeSessions.innerText = 40 + Math.floor(Math.random() * 20);
+
+            const statusList = ["Running", "Stable", "Optimizing", "Updating"];
+            systemStatus.innerText = statusList[Math.floor(Math.random() * statusList.length)];
+
+            const newItem = document.createElement("li");
+            newItem.innerText = "System refreshed at " + new Date().toLocaleTimeString();
+            activityLog.appendChild(newItem);
+        };
+    });
+</script>
+    <a href="index.html" class="go-index">Home</a>
+</body>
+</html>

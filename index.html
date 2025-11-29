@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hamro cafe — Where Coffee Meets Comfort</title>
+  <meta name="description" content="Hamro cafe in Kathmandu: specialty coffee, pastries, cozy ambiance, events, and online ordering." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="header">
+    <div class="container header__bar">
+      <a href="#3d" class="logo"><b>HAMRO</b> Cafe</a>
+      <nav class="nav" id="nav">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+        <a href="#order">Order Online</a>
+        <a href="#events">Events</a>
+        <a href="login.html">login</a>
+      </nav>
+      <button class="btn btn--primary cta-desktop" data-scroll="#order">Order Now</button>
+      <button class="nav-toggle" aria-label="Open Menu" id="navToggle">☰</button>
+    </div>
+  </header>
+  <section class="3d">
+    <!-- BACKGROUND IMAGE -->
+    <div class="bg-layer"></div>
+
+    <!-- SPLINE MODEL -->
+    <div class="spline-layer">
+        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.5/build/spline-viewer.js"></script>
+<spline-viewer url="https://prod.spline.design/DGDrhe9WR2jsByiI/scene.splinecode"></spline-viewer>
+    </div>
+
+</section>
+
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+  
+    <div class="container hero__grid">
+      
+      <div class="hero__text">
+        <h1>Where Coffee Meets Comfort</h1>
+        <p>Small-batch espresso in the heart of Kathmandu.</p>
+        <div class="hero__actions">
+          <button class="btn btn--primary" data-scroll="#order">Order Now</button>
+          <button class="btn btn--ghost" data-scroll="#menu">View Menu</button>
+        </div>
+
+      </div>
+      <div class="hero__media">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1200&auto=format&fit=crop" alt="Café ambiance with coffee and pastries" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Specials / Promotions -->
+  <section class="promos">
+    <div class="container promos__grid">
+      <article class="promo-card">
+        <h3>Winter Warmers</h3>
+        <p>Try our Warm latte and orange-chocolate muffin.</p>
+        <span class="badge">Seasonal</span>
+      </article>
+      <article class="promo-card">
+        <h3>First Order Perk</h3>
+        <p>Free espresso shot with your first online order.</p>
+        <span class="badge badge--accent">Online</span>
+      </article>
+      <article class="promo-card">
+        <h3>Happy Hours</h3>
+        <p>Weekdays 3–5 PM: 20% off all coffees.</p>
+        <span class="badge">In-store</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section id="menu" class="menu">
+    <div class="container">
+      <div class="section-head">
+        <h2>Our Menu</h2>
+        <p>Craft coffee, flaky pastries, and seasonal specials.</p>
+      </div>
+
+      <div class="menu__filters">
+        <button class="chip is-active" data-filter="all">All</button>
+        <button class="chip" data-filter="coffee">Coffee & Drinks</button>
+        <button class="chip" data-filter="pastries">Pastries & Snacks</button>
+        <button class="chip" data-filter="seasonal">Seasonal Specials</button>
+      </div>
+
+      <div id="menuGrid" class="menu__grid">
+        <!-- Populated by script.js from data.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+ <section class="testimonials">
+  <div class="container">
+    <div class="section-head">
+      <h2>Loved by our community</h2>
+      <p>Real words from real regulars.</p>
+    </div>
+
+    <div class="slider" id="slider">
+      <figure class="slide">
+        <blockquote>“Mitho Chiya xa.”</blockquote>
+        <figcaption>— Aayush</figcaption>
+      </figure>
+      <figure class="slide">
+        <blockquote>“Best Dating/Hangout spot.”</blockquote>
+        <figcaption>— roshan</figcaption>
+      </figure>
+      <figure class="slide">
+        <blockquote>“Aao🗣️ aao🗣️ yaha ko chocolate cookies khao🗣️”</blockquote>
+        <figcaption>— durga ba</figcaption>
+      </figure>
+      <figure class="slide">
+        <blockquote>“Guff jasto lagla, tara cambodia ko vanda ramro coffee raixa!!”</blockquote>
+        <figcaption>— oli ba</figcaption>
+      </figure>
+      <figure class="slide">
+        <blockquote>“Yaha ko vai haru dami raixan, ani amrican chiya tw jhan dami”</blockquote>
+        <figcaption>— rajesh hamal</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+
+  <!-- About -->
+  <section id="about" class="about">
+    <div class="container about__grid">
+      <div>
+        <h2>Our story</h2>
+        <p>Hamro Café ko journey chai ekdam simple xa.
+Ek din bhane, ‘Ghar ko chiya ta dherai piyo, aba aru lai pani pilau na.’
+Tyespachi rin lera café kholdeko</p>
+        <p>Hamro motto chai:
+‘Customer khushi bhaye, bill ta afai thapinxa.’
+Tara tyo ta kahile hune ho ke thaha 😅.</p>
+        <div class="usps">
+          <div class="usp"><strong>Local:</strong> Ingredients from Kathmandu vendors</div>
+          <div class="usp"><strong>Sustainable:</strong> Compostable cups & minimal waste</div>
+          <div class="usp"><strong>Community:</strong> Open mic nights & workshops</div>
+        </div>
+      </div>
+      <div class="about__media">
+        <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=1200&auto=format&fit=crop" alt="Warm café interior with wood and plants" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Location & Hours -->
+  <section class="hours">
+    <div class="container hours__grid">
+      <div class="card">
+        <h3>Location</h3>
+        <p>Thamel, Kathmandu, Bāgmatī, Nepal</p>
+        <a class="link" target="_blank" rel="noopener" href="https://maps.google.com">View on Google Maps</a>
+      </div>
+      <div class="card">
+        <h3>Hours</h3>
+        <p>Mon–Fri: 7:00–20:00</p>
+        <p>Sat–Sun: 8:00–21:00</p>
+      </div>
+      <div class="card">
+        <h3>Contact</h3>
+        <p>+977 987654321</p>
+        <p>info@hamrocafe.com</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Order Online -->
+  <section id="order" class="order">
+    <div class="container">
+      <div class="section-head">
+        <h2>Order online</h2>
+        <p>Pickup and delivery. Customize your drink, pay securely.</p>
+      </div>
+
+      <form id="orderForm" class="order__form">
+        <div class="form-row">
+          <label for="orderItem">Item</label>
+          <select id="orderItem"></select>
+        </div>
+        <div class="form-row">
+          <label for="size">Size</label>
+          <select id="size">
+            <option value="small">Small</option>
+            <option value="regular" selected>Regular</option>
+            <option value="large">Large</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="notes">Notes</label>
+          <input id="notes" type="text" placeholder="Extra hot, oat milk, less sugar..." />
+        </div>
+        <div class="form-row">
+          <label for="pickup">Fulfillment</label>
+          <select id="pickup">
+            <option value="pickup" selected>Pickup</option>
+            <option value="delivery">Delivery</option>
+          </select>
+        </div>
+        <button class="btn btn--primary" type="submit">Add to Cart</button>
+      </form>
+
+      <div class="cart" id="cart">
+        <h3>Your cart</h3>
+        <ul id="cartList"></ul>
+        <div class="cart__total">
+          <span>Total:</span>
+          <strong id="cartTotal">NPR 0</strong>
+        </div>
+        <button class="btn btn--accent" id="checkout">Checkout</button>
+        <p class="fineprint">Online-exclusive: Free espresso shot with your first order.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Events -->
+  <section id="events" class="events">
+    <div class="container">
+      <div class="section-head">
+        <h2>Events</h2>
+        <p>Live music, tasting workshops, and themed nights.</p>
+      </div>
+      <div class="events__list" id="eventsList">
+        <!-- populated from data.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <div class="container contact__grid">
+      <form id="contactForm" class="form card">
+        <h3>contact</h3>
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input id="name" type="text" required />
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" type="email" required />
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" rows="4" required></textarea>
+        </div><br>
+        <button class="btn btn--primary" type="submit">Send</button>
+        <p id="contactStatus" class="status"></p>
+      </form>
+
+      <div class="card contact__map">
+        <h3>Find us</h3>
+        <iframe
+          title="Google Map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.0!2d85.31!3d27.71!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19%3A0x0!2sThamel!5e0!3m2!1sen!2snp!4v000000"
+          width="100%" height="280" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <div class="socials">
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="Facebook">Facebook</a>
+          <a href="#" aria-label="Twitter">Twitter</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog / Newsletter -->
+  <section class="blog">
+    <div class="container blog__grid">
+      <article class="card">
+        <h3>Behind the beans</h3>
+        <p>How we source ethically and roast for balance.</p>
+        <a class="link" href="#">Read more</a>
+      </article>
+      <article class="card">
+        <h3>Seasonal bakes</h3>
+        <p>Our baker’s favorites for this month.</p>
+        <a class="link" href="#">Read more</a>
+      </article>
+      <form class="card newsletter" id="newsletterForm">
+        <h3>Get updates</h3>
+        <p>Promotions, events, and new menu items.</p>
+        <div class="form-row">
+          <label for="newsletterEmail">Email</label>
+          <input id="newsletterEmail" type="email" required placeholder="you@example.com" />
+        </div>
+        <p id="newsletterStatus" class="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <strong>Hamro cafe</strong>
+        <p>Thamel, Kathmandu</p>
+      </div>
+      <div class="footer__links">
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+      <div class="footer__copy">© <span id="year"></span> Hamro cafe</div>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
